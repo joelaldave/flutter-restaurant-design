@@ -8,6 +8,48 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Container(
+              height: 25,
+              width: 80,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Image(
+                    image: AssetImage('assets/noun_Home_1859323.png'),
+                  ),
+                  Image(image: AssetImage('assets/shop-1.png')),
+                ],
+              ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Color(0xff5117AC)),
+              height: 55,
+              width: 55,
+              padding: EdgeInsets.all(12),
+              child: Image(image: AssetImage('assets/noun_basket_821481.png')),
+            ),
+            Container(
+              height: 25,
+              width: 80,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Image(image: AssetImage('assets/noun_Favorite_-7.png')),
+                  Image(
+                      image: AssetImage(
+                          'assets/christopher-campbell-rDEOVtE-1.png')),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -76,51 +118,6 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                        height: 25,
-                        width: 80,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Image(
-                              image: AssetImage('assets/noun_Home_1859323.png'),
-                            ),
-                            Image(image: AssetImage('assets/shop-1.png')),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Color(0xff5117AC)),
-                        height: 55,
-                        width: 55,
-                        padding: EdgeInsets.all(12),
-                        child: Image(
-                            image: AssetImage('assets/noun_basket_821481.png')),
-                      ),
-                      Container(
-                        height: 25,
-                        width: 80,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Image(
-                                image:
-                                    AssetImage('assets/noun_Favorite_-7.png')),
-                            Image(
-                                image: AssetImage(
-                                    'assets/christopher-campbell-rDEOVtE-1.png')),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                )
               ],
             ),
           ),
